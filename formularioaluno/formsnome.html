@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Aluno Novo</title>
+</head>
+
+<body>
+    <a href="/C:/Users/rikan/Projetos Tecnologia de construção de softwares/LAB-N1/index.html">Página Inicial</a>
+    <hr>
+    <h4>Formulário Novo Aluno</h4>
+    <form action="" method="post">
+        <label for="idnome">Nome</label><br>
+        <input type="text" id="idnome" name="nome" required placeholder="Digite o nome do aluno"> <br><br>
+        <label for="ididade">Idade</label> <br>
+        <input type="number" id="ididade" name="idade" required placeholder="Digite a idade do aluno"> <br><br>
+        <label for="idcurso">Curso</label> <br>
+        <select name="curso" id="idcurso" required>
+            <option value="0"></option>
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="csharp">C#</option>
+            <option value="php">PHP</option>
+        </select> <br><br>
+        <label for="idnota">Nota Final</label> <br>
+        <input type="number" id="idnota" name="nota" required placeholder="Nota final do Aluno"> 
+        <br><br>
+        <input id="btnSalvar" type="submit" value="Salvar">
+        <input id="btnExcluir" type="submit" value="Excluir">
+        <input id="btnCarregar" type="submit" value="Carregar Dados">
+    </form>
+    <hr>
+    <table border=".1" cellpadding="5" cellspacing="0">
+        <thead>
+            <tr>
+                <th bgcolor="gray" width = "130">Nome</th>
+                <th bgcolor="gray" width = "130">Idade</th>
+                <th bgcolor="gray" width = "130">Curso</th>
+                <th bgcolor="gray" width = "130">Nota Final</th>
+            </tr>
+        </thead>
+        <tbody id="tabela">
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <script src="/formularioaluno/js/formsnome.js"></script>
+</body>
+
+</html>
