@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Controle de Funcionários</title>
+</head>
+
+<body>
+    <h3>Funcionários Startup de Tecnologia</h3>
+    <a href="../index.html">Página Inicial</a>
+    <hr>
+    <h4>Formulário Controle de Funcionários</h4>
+    <form action="" method="post">
+        <label for="idnome">Nome</label><br>
+        <input type="text" id="idnome" name="nome" required placeholder="Nome do Funcionário"> <br><br>
+        <label for="ididade">Idade</label> <br>
+        <input type="number" id="ididade" name="idade" required placeholder="Idade do Funcionário"> <br><br>
+        <label for="idcargo">Cargo</label> <br>
+        <input type="text" id="idcargo" name="cargo" required placeholder="Cargo do Funcionário"> <br><br>
+        <label for="idsal">Salário</label> <br>
+        <input type="number" id="idsal" name="salario" required placeholder="Salário do Funcionário"> 
+        <br><br>
+        <input id="btnSalvar" type="submit" value="Salvar">
+    </form>
+    <hr>
+    <table border =".1" cellpadding="5" cellspacing="0">
+        <thead>
+            <tr>
+               <th bgcolor="gray" width = "130">ID</th>
+                <th bgcolor="gray" width = "130">Nome</th>
+                <th bgcolor="gray" width = "130">Idade</th>
+                <th bgcolor="gray" width = "130">Cargo</th>
+                <th bgcolor="gray" width = "130">Salário (R$)</th>
+                <th bgcolor="gray" width = "130">Ações</th>
+            </tr>
+        </thead>
+        <tbody id="tabela">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+
+    </table>
+    <hr>
+    <h4>Relatórios</h4>
+    <button type="button" id="btnSalario">Listar Funcionários com Salários +R$5000</button>
+    <button type="button" id="btnMediaSal">Média Salarial</button>
+    <button type="button" id="btnCargos">Cargos Únicos</button>
+    <button type="button" id="btnNomes">Listar Nomes em Maiúsculos</button>
+
+    <div id="relatorio" style="margin-top: 10px; border: 1px solid #ccc; padding: 10px; background: #f9f9f9;">  
+        Os resultados dos relatórios aparecerão aqui.
+    </div>
+      
+
+    <script src="js/formsfuncionario.js"></script>
+</body>
+
+</html>
