@@ -19,27 +19,27 @@
         <label for="idcurso">Curso</label> <br>
         <select name="curso" id="idcurso" required>
             <option value="0"></option>
-            <option value="javascript">JavaScript</option>
-            <option value="python">Python</option>
-            <option value="java">Java</option>
-            <option value="csharp">C#</option>
-            <option value="php">PHP</option>
+            <option value="Java Script">JavaScript</option>
+            <option value="Python">Python</option>
+            <option value="Java">Java</option>
+            <option value="C Sharp">C#</option>
+            <option value="PHP">PHP</option>
         </select> <br><br>
         <label for="idnota">Nota Final</label> <br>
         <input type="number" id="idnota" name="nota" required placeholder="Nota final do Aluno"> 
         <br><br>
         <input id="btnSalvar" type="submit" value="Salvar">
-        <input id="btnExcluir" type="submit" value="Excluir">
-        <input id="btnCarregar" type="submit" value="Carregar Dados">
     </form>
     <hr>
-    <table border=".1" cellpadding="5" cellspacing="0">
+    <table border =".1" cellpadding="5" cellspacing="0">
         <thead>
             <tr>
+               <th bgcolor="gray" width = "130">ID</th>
                 <th bgcolor="gray" width = "130">Nome</th>
                 <th bgcolor="gray" width = "130">Idade</th>
                 <th bgcolor="gray" width = "130">Curso</th>
                 <th bgcolor="gray" width = "130">Nota Final</th>
+                <th bgcolor="gray" width = "130">Ações</th>
             </tr>
         </thead>
         <tbody id="tabela">
@@ -50,13 +50,24 @@
                 <th></th>
                 <th></th>
                 <th></th>
-                <th></th>
             </tr>
         </tbody>
 
     </table>
+    <hr>
+    <h4>Relatórios</h4>
+    <button type="button" id="btnAprovados">Listar Aprovados</button>
+    <button type="button" id="btnMediaNotas">Média das Notas</button>
+    <button type="button" id="btnMediaIdades">Média das Idades</button>
+    <button type="button" id="btnOrdemNome"> Nomes (A-Z)</button>
+    <button type="button" id="btnAlunosPorCurso">Alunos por Curso</button>
 
-    <script src="/formularioaluno/js/formsnome.js"></script>
+    <div id="relatorio" style="margin-top: 10px; border: 1px solid #ccc; padding: 10px; background: #f9f9f9;">  
+        Os resultados dos relatórios aparecerão aqui.
+    </div>
+      
+
+    <script src="js/formsnome.js"></script>
 </body>
 
 </html>
